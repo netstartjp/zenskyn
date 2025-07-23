@@ -1,0 +1,95 @@
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.headerNav {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.searchForm {
+  display: flex;
+  gap: 5px;
+}
+
+.searchInput {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.searchButton {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.searchButton:hover {
+  background-color: #0056b3;
+}
+
+.logoutButton,
+.adminButton {
+  background-color: #ef4444;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.logoutButton:hover {
+  background-color: #dc2626;
+}
+
+.adminButton {
+  background-color: #3b82f6;
+}
+
+.adminButton:hover {
+  background-color: #2563eb;
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.loadingMessage {
+  text-align: center;
+  padding: 50px;
+  font-size: 1.5rem;
+  color: #555;
+}

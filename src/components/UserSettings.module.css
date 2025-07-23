@@ -1,0 +1,94 @@
+.settingsContainer {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin-top: 20px;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space between form groups */
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column; /* Default to column for small screens */
+}
+
+@media (min-width: 600px) { /* Apply row layout for larger screens */
+  .formGroup {
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.formLabel {
+  flex: 0 0 150px; /* Fixed width for labels */
+  font-size: 1rem;
+  color: #333;
+}
+
+.inputField, .textareaField {
+  flex: 1; /* Take up remaining space */
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.textareaField {
+  resize: vertical;
+}
+
+.formActions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.saveButton {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.saveButton:hover {
+  background-color: #0056b3;
+}
+
+.saveButton:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.loadingMessage, .errorMessage {
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.loadingMessage {
+  background-color: #e0f7fa;
+  color: #007bff;
+}
+
+.errorMessage {
+  background-color: #ffebee;
+  color: #d32f2f;
+}

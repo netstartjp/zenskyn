@@ -1,0 +1,38 @@
+
+/* Sidebar styles */
+.sidebar {
+  width: 200px; /* Adjust as needed */
+  background-color: #e0e0e0; /* Grayish color */
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  height: 100vh; /* Full height */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.main-content-with-sidebar {
+  margin-left: 200px; /* Same as sidebar width */
+  width: calc(100vw - 200px); /* Take up remaining width */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  padding: 20px; /* Add some padding around the content */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Ensure the actual content inside main-content-with-sidebar doesn't stretch */
+.main-content-with-sidebar > div {
+  width: 100%;
+  max-width: 800px; /* Example: Limit content width for readability */
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: none; /* Hide sidebar on small screens */
+  }
+
+  .main-content-with-sidebar {
+    margin-left: 0; /* Remove margin on small screens */
+    width: 100vw; /* Take full width on small screens */
+  }
+}

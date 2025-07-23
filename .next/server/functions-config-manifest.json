@@ -1,0 +1,1 @@
+{"version":1,"functions":{"/api/auth/check-admin":{},"/api/admin/check":{},"/api/admin/users/[id]":{},"/api/auth/status":{},"/api/admin/users":{},"/api/fediverse/local-timeline":{},"/api/comments/[id]":{},"/api/posts/[id]/comments":{},"/api/posts/[id]":{},"/api/posts":{},"/api/posts/[id]/like":{},"/api/users/[id]/update":{},"/api/users/[id]":{}}}

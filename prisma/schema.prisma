@@ -1,0 +1,61 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.lyd/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model User {
+  id            Int      @id @default(autoincrement())
+  email         String   @unique
+  name          String @unique
+  password      String
+  bio           String?  @default("")
+  profileImageUrl String? @default("")
+  isAdmin         Boolean @default(false)
+  customId      String?  @unique // 新しく追加
+  posts         Post[]
+  likes         Like[]
+  comments      Comment[]
+  createdAt     DateTime @default(now())
+}
+
+model Post {
+  id        Int      @id @default(autoincrement())
+  content   String
+  createdAt DateTime @default(now())
+  author    User     @relation(fields: [authorId], references: [id], onDelete: Cascade)
+  authorId  Int
+  likes     Like[]
+  comments  Comment[]
+  type      String   @default("ORIGINAL") // EnumをStringに変更
+  parentId  Int?     // リプライや引用元の投稿ID
+  parent    Post?    @relation("ParentChildPosts", fields: [parentId], references: [id], onDelete: Cascade)
+  children  Post[]   @relation("ParentChildPosts")
+}
+
+model Like {
+  id        Int      @id @default(autoincrement())
+  userId    Int
+  postId    Int
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  post      Post     @relation(fields: [postId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, postId]) // ユーザーは一つの投稿に一度しか「いいね」できない
+}
+
+model Comment {
+  id        Int      @id @default(autoincrement())
+  content   String
+  createdAt DateTime @default(now())
+  author    User     @relation(fields: [authorId], references: [id], onDelete: Cascade)
+  authorId  Int
+  post      Post     @relation(fields: [postId], references: [id], onDelete: Cascade)
+  postId    Int
+}

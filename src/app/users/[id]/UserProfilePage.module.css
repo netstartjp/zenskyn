@@ -1,0 +1,110 @@
+.loadingMessage,
+.errorMessage,
+.noUserMessage {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.125rem;
+}
+
+.errorMessage {
+  color: #ef4444;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.profileTitle {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #333;
+}
+
+.backButton {
+  background-color: #4b5563;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.2s ease-in-out;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.backButton:hover {
+  background-color: #1f2937;
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.userInfoCard {
+  background-color: white;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e5e7eb;
+  position: relative; /* For edit button positioning */
+}
+
+.cardTitle {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.profileImage {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 3px solid #3b82f6;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.userInfoText {
+  font-size: 1.125rem;
+  color: #4b5563;
+  margin-bottom: 8px;
+}
+
+.userInfoText strong {
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.editButton {
+  background-color: #3b82f6;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.2s ease-in-out;
+  margin-top: 20px;
+}
+
+.editButton:hover {
+  background-color: #2563eb;
+}
+
+.sectionTitle {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 24px;
+  color: #333;
+}

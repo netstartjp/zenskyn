@@ -1,0 +1,50 @@
+PS C:\Users\kazuy\sns> npm run build
+
+> sns@0.1.0 build
+> next build
+
+  ▲ Next.js 14.2.30
+  - Environments: .env
+
+   Creating an optimized production build ...
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Managed item C:\Users\kazuy\sns\node_modules\@next\swc-win32-arm64-msvc isn't a directory or doesn't contain a package.json (see snapshot.managedPaths option)
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Managed item C:\Users\kazuy\sns\node_modules\@next\swc-win32-ia32-msvc isn't a directory or doesn't contain a package.json (see snapshot.managedPaths option)
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Managed item C:\Users\kazuy\sns\node_modules\@next\swc-linux-x64-musl isn't a directory or doesn't contain a package.json (see snapshot.managedPaths option)
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Managed item C:\Users\kazuy\sns\node_modules\@next\swc-linux-x64-gnu isn't a directory or doesn't contain a package.json (see snapshot.managedPaths option)
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Managed item C:\Users\kazuy\sns\node_modules\@next\swc-darwin-x64 isn't a directory or doesn't contain a package.json (see snapshot.managedPaths option)
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Managed item C:\Users\kazuy\sns\node_modules\@next\swc-darwin-arm64 isn't a directory or doesn't contain a package.json (see snapshot.managedPaths option)
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Managed item C:\Users\kazuy\sns\node_modules\@next\swc-linux-arm64-musl isn't a directory or doesn't contain a package.json (see snapshot.managedPaths option)
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Managed item C:\Users\kazuy\sns\node_modules\@next\swc-linux-arm64-gnu isn't a directory or doesn't contain a package.json (see snapshot.managedPaths option)
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Managed item C:\Users\kazuy\sns\node_modules\fsevents isn't a directory or doesn't contain a package.json (see snapshot.managedPaths option)
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Managed item C:\Users\kazuy\sns\node_modules\@next\swc-win32-ia32-msvc isn't a directory or doesn't contain a package.json (see snapshot.managedPaths option)
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Managed item C:\Users\kazuy\sns\node_modules\@next\swc-linux-arm64-musl isn't a directory or doesn't contain a package.json (see snapshot.managedPaths option)
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Managed item C:\Users\kazuy\sns\node_modules\@next\swc-win32-arm64-msvc isn't a directory or doesn't contain a package.json (see snapshot.managedPaths option)
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Managed item C:\Users\kazuy\sns\node_modules\@next\swc-linux-arm64-gnu isn't a directory or doesn't contain a package.json (see snapshot.managedPaths option)
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Managed item C:\Users\kazuy\sns\node_modules\@next\swc-darwin-x64 isn't a directory or doesn't contain a package.json (see snapshot.managedPaths option)
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Managed item C:\Users\kazuy\sns\node_modules\@next\swc-darwin-arm64 isn't a directory or doesn't contain a package.json (see snapshot.managedPaths option)
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Managed item C:\Users\kazuy\sns\node_modules\@next\swc-linux-x64-musl isn't a directory or doesn't contain a package.json (see snapshot.managedPaths option)
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Managed item C:\Users\kazuy\sns\node_modules\@next\swc-linux-x64-gnu isn't a directory or doesn't contain a package.json (see snapshot.managedPaths option)
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Managed item C:\Users\kazuy\sns\node_modules\fsevents isn't a directory or doesn't contain a package.json (see snapshot.managedPaths option)
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Managed item C:\Users\kazuy\sns\node_modules\@next\swc-linux-x64-gnu isn't a directory or doesn't contain a package.json (see snapshot.managedPaths option)
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Managed item C:\Users\kazuy\sns\node_modules\@next\swc-win32-ia32-msvc isn't a directory or doesn't contain a package.json (see snapshot.managedPaths option)
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Managed item C:\Users\kazuy\sns\node_modules\@next\swc-win32-arm64-msvc isn't a directory or doesn't contain a package.json (see snapshot.managedPaths option)
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Managed item C:\Users\kazuy\sns\node_modules\@next\swc-darwin-arm64 isn't a directory or doesn't contain a package.json (see snapshot.managedPaths option)
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Managed item C:\Users\kazuy\sns\node_modules\@next\swc-linux-arm64-gnu isn't a directory or doesn't contain a package.json (see snapshot.managedPaths option)
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Managed item C:\Users\kazuy\sns\node_modules\@next\swc-linux-arm64-musl isn't a directory or doesn't contain a package.json (see snapshot.managedPaths option)
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Managed item C:\Users\kazuy\sns\node_modules\@next\swc-linux-x64-musl isn't a directory or doesn't contain a package.json (see snapshot.managedPaths option)
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Managed item C:\Users\kazuy\sns\node_modules\@next\swc-darwin-x64 isn't a directory or doesn't contain a package.json (see snapshot.managedPaths option)
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Managed item C:\Users\kazuy\sns\node_modules\fsevents isn't a directory or doesn't contain a package.json (see snapshot.managedPaths option)
+ ✓ Compiled successfully
+   Linting and checking validity of types  ...Failed to compile.
+
+./src/app/api/posts/[id]/route.ts:47:52
+Type error: Parameter 'like' implicitly has an 'any' type.
+
+  45 |     const postWithStatus = {
+  46 |       ...post,
+> 47 |       likedByCurrentUser: userId ? post.likes.some(like => like.userId === userId) : false,
+     |                                                    ^
+  48 |       likesCount: post._count.likes,
+  49 |     };
+  50 |
+Next.js build worker exited with code: 1 and signal: null

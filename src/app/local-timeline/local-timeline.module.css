@@ -1,0 +1,22 @@
+.container {
+  padding: 20px;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.loadingMessage,
+.errorMessage,
+.noPosts {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.errorMessage {
+  color: #d32f2f;
+}

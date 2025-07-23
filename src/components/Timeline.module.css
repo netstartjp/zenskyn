@@ -1,0 +1,214 @@
+.timelineContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f0f2f5;
+  border-radius: 8px;
+}
+
+.postCard {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.postHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.authorLink {
+  font-weight: bold;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.authorLink:hover {
+  text-decoration: underline;
+}
+
+.postDate {
+  font-size: 0.8em;
+  color: #65676b;
+}
+
+.postContent {
+  font-size: 1em;
+  color: #1c1e21;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.postActions {
+  display: flex;
+  gap: 15px;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+  margin-top: 15px;
+}
+
+.likeButton,
+.deleteButton,
+.deleteCommentButton,
+.actionButton {
+  background-color: #f0f2f5;
+  color: #65676b;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: background-color 0.2s ease;
+}
+
+.likeButton:hover,
+.actionButton:hover {
+  background-color: #e0e2e5;
+}
+
+.likeButton.liked {
+  color: #007bff;
+}
+
+.likeIcon {
+  width: 18px;
+  height: 18px;
+}
+
+.deleteButton,
+.deleteCommentButton {
+  background-color: #dc3545;
+  color: white;
+}
+
+.deleteButton:hover,
+.deleteCommentButton:hover {
+  background-color: #c82333;
+}
+
+.noPostsMessage {
+  text-align: center;
+  color: #65676b;
+  padding: 20px;
+  border: 1px dashed #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+/* Comments Section */
+.commentsSection {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.commentsTitle {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.commentList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.commentItem {
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  padding: 10px 15px;
+  position: relative;
+}
+
+.commentAuthor {
+  font-weight: bold;
+  color: #007bff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.commentAuthor:hover {
+  text-decoration: underline;
+}
+
+.commentDate {
+  font-size: 0.75em;
+  color: #888;
+}
+
+.commentContent {
+  font-size: 0.9em;
+  color: #333;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.noCommentsMessage {
+  font-size: 0.9em;
+  color: #888;
+  text-align: center;
+  padding: 10px;
+  border: 1px dashed #eee;
+  border-radius: 5px;
+}
+
+/* Quoted/Reposted Post Styles */
+.quotedPost,
+.repostedPost,
+.replyToPost {
+  border: 1px solid #ddd;
+  border-left: 4px solid #007bff;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+}
+
+.quotedPostHeader,
+.repostedPostHeader {
+  font-size: 0.9em;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.quotedPostContent,
+.repostedPostContent {
+  font-size: 0.95em;
+  color: #333;
+  margin-left: 10px;
+  border-left: 2px solid #eee;
+  padding-left: 10px;
+}
+
+.quoteFormContainer {
+  margin-top: 15px;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+}
+
+.mentionLink {
+  color: #007bff; /* メンションのリンク色 */
+  text-decoration: none;
+  font-weight: bold;
+  background-color: rgba(0, 123, 255, 0.1); /* やや強調された背景色 */
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+.mentionLink:hover {
+  text-decoration: underline;
+}
+
+.postAuthorCustomId {
+  font-size: 0.8em;
+  color: #888; /* 灰色 */
+  margin-left: 5px;
+}
